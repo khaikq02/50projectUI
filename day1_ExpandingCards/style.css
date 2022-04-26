@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+  color: white;
+  height: 500px;
+  justify-content: center;
+}
+
+.panel {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  margin: 10px;
+  flex: 0.5;
+  transition: flex 1s ease-out;
+}
+
+.panel h3 {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  opacity: 0;
+}
+
+.panel.active h3 {
+  opacity: 1;
+}
+
+.active {
+  flex: 5;
+}
